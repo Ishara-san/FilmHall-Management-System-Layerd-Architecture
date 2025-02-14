@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="506.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.project.filmhall.controller.admin_page.employee.CheckEmployeePageFormController">
+   <children>
+      <ImageView fitHeight="535.0" fitWidth="716.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/userside.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="47.0" layoutY="23.0" prefHeight="98.0" prefWidth="636.0" text="Employee Details" textFill="#000000c9">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblCheckEmployee" layoutX="54.0" layoutY="161.0" prefHeight="270.0" prefWidth="607.0">
+        <columns>
+          <TableColumn fx:id="colEmployeeId" prefWidth="221.60004425048828" text="Employee Id" />
+          <TableColumn fx:id="colEmployeeName" prefWidth="380.7998962402344" text="Employee Name" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

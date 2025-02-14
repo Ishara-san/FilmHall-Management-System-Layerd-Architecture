@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="employeePane" prefHeight="750.0" prefWidth="1052.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.project.filmhall.controller.admin_page.employee.OptionpageFormController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1055.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/userside.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="7.0" layoutY="5.0" prefHeight="136.0" prefWidth="1043.0" text="Employee Option" textFill="#000000c9">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2197ff00" height="439.0" layoutX="69.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="288.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2197ff00" height="439.0" layoutX="389.0" layoutY="178.0" stroke="BLACK" strokeType="INSIDE" width="288.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2197ff00" height="438.0" layoutX="709.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" width="288.0" />
+      <Button layoutX="135.0" layoutY="530.0" mnemonicParsing="false" onAction="#btnEmployeeOnAction" prefHeight="40.0" prefWidth="147.0" style="-fx-border-color: #000000;" text="click" textFill="#000000c0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="463.0" layoutY="530.0" mnemonicParsing="false" onAction="#btnShiftOnAction" prefHeight="40.0" prefWidth="147.0" style="-fx-border-color: #000000;" text="click" textFill="#000000c0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="778.0" layoutY="529.0" mnemonicParsing="false" onAction="#btnSalaryOnAction" prefHeight="40.0" prefWidth="147.0" style="-fx-border-color: #000000;" text="click" textFill="#000000c0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Line endX="320.26666259765625" endY="465.8999938964844" layoutX="2.0" layoutY="24.0" startX="100.00000762939453" startY="465.8999938964844" />
+      <Line endX="646.6666259765625" endY="465.3999938964844" layoutX="2.0" layoutY="24.0" startX="420.5333251953125" startY="465.3999938964844" />
+      <Line endX="973.0667114257812" endY="464.8999938964844" layoutX="2.0" layoutY="24.0" startX="739.4666748046875" startY="464.8999938964844" />
+      <Label alignment="CENTER" layoutX="71.0" layoutY="325.0" prefHeight="63.0" prefWidth="286.0" text="manage" textFill="#000000ba">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="69.0" layoutY="368.0" prefHeight="47.0" prefWidth="286.0" text="employee" textFill="#000000ba">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="71.0" layoutY="403.0" prefHeight="51.0" prefWidth="286.0" text="details" textFill="#000000ba">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="391.0" layoutY="325.0" prefHeight="56.0" prefWidth="286.0" text="manage" textFill="#000000ba">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="389.0" layoutY="371.0" prefHeight="38.0" prefWidth="286.0" text="employee" textFill="#000000ba">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="391.0" layoutY="398.0" prefHeight="54.0" prefWidth="286.0" text="shift" textFill="#000000ba">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="707.0" layoutY="317.0" prefHeight="63.0" prefWidth="286.0" text="manage" textFill="#000000ba">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="705.0" layoutY="359.0" prefHeight="53.0" prefWidth="286.0" text="employee" textFill="#000000ba">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="707.0" layoutY="391.0" prefHeight="51.0" prefWidth="286.0" text="salary" textFill="#000000ba">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="82.0" fitWidth="72.0" layoutX="181.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/management.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="76.0" layoutX="499.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/shift.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="72.0" layoutX="815.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/employee-benefit.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

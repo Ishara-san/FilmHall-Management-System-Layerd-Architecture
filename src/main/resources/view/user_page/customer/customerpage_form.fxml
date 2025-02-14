@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1052.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.project.filmhall.controller.user_page.customer.CustomerpageFormController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1055.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/userside.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="17.0" layoutY="15.0" prefHeight="84.0" prefWidth="1028.0" text="Manage Member" textFill="#000000c9">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebf5ff00" height="528.0" layoutX="61.0" layoutY="146.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="1.4" width="337.0" />
+      <TableView fx:id="tblCustomer" layoutX="432.0" layoutY="142.0" onMouseClicked="#getValueOnAction" prefHeight="532.0" prefWidth="571.0" style="-fx-border-color: #000000;">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="colName" prefWidth="99.7333984375" text="name" />
+            <TableColumn fx:id="colGenre" prefWidth="107.46661376953125" text="genre" />
+            <TableColumn fx:id="colContact" prefWidth="142.6666259765625" text="contact" />
+            <TableColumn fx:id="colEmail" prefWidth="143.199951171875" text="email" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtId" layoutX="114.0" layoutY="205.0" prefHeight="35.0" prefWidth="231.0" promptText="Member ID">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtName" layoutX="113.0" layoutY="258.0" prefHeight="34.0" prefWidth="231.0" promptText=" Member Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtGenre" layoutX="113.0" layoutY="312.0" prefHeight="34.0" prefWidth="231.0" promptText="Member Genre">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button layoutX="104.0" layoutY="524.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="41.0" prefWidth="254.0" style="-fx-border-color: #000000; -fx-background-color: #0048ff;" text="A d d">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <TextField fx:id="txtContact" layoutX="113.0" layoutY="370.0" prefHeight="34.0" prefWidth="231.0" promptText="Member Contact">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEmail" layoutX="112.0" layoutY="426.0" prefHeight="34.0" prefWidth="234.0" promptText="Member Email">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Line endX="343.3333435058594" endY="469.20001220703125" layoutX="20.0" layoutY="20.0" startX="64.933349609375" startY="469.20001220703125" />
+      <ButtonBar layoutX="78.0" layoutY="590.0" prefHeight="52.0" prefWidth="277.0">
+        <buttons>
+            <Button mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="42.0" prefWidth="73.0" style="-fx-border-color: #000000; -fx-background-color: #ecdc2d;" text="Clear">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="39.0" prefWidth="75.0" style="-fx-border-color: #000000; -fx-background-color: #16c71c;" text="Update">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="40.0" prefWidth="74.0" style="-fx-border-color: #000000; -fx-background-color: #e13a3a;" text="Delete">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

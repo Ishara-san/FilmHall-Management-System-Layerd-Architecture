@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="506.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.project.filmhall.controller.user_page.ticket.CheckFilmpageFormController">
+   <children>
+      <ImageView fitHeight="535.0" fitWidth="716.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/userside.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="37.0" layoutY="28.0" prefHeight="83.0" prefWidth="668.0" text="Available Movies" textFill="#000000c9">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblCheckFilm" layoutX="50.0" layoutY="166.0" prefHeight="278.0" prefWidth="622.0">
+         <columns>
+            <TableColumn fx:id="colFilmId" prefWidth="137.59998321533203" text="Film Id" />
+            <TableColumn fx:id="colName" prefWidth="229.5999755859375" text="Film Name" />
+            <TableColumn fx:id="colGenre" prefWidth="115.20004272460938" text="genre" />
+            <TableColumn fx:id="colStatus" prefWidth="136.800048828125" text="status" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1052.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.project.filmhall.controller.admin_page.account.AccountpageFormController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1055.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/userside.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebf5ff00" height="617.0" layoutX="333.0" layoutY="65.0" stroke="BLACK" strokeType="INSIDE" width="376.0" />
+      <Label alignment="CENTER" layoutX="421.0" layoutY="190.0" prefHeight="62.0" prefWidth="204.0" text="Sign Up" textFill="#000000e4">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Line endX="347.20001220703125" endY="445.8000183105469" layoutX="324.0" layoutY="35.0" startX="53.5999755859375" startY="445.8000183105469" />
+      <Button layoutX="431.0" layoutY="521.0" mnemonicParsing="false" onAction="#btnCreateAccount" prefHeight="36.0" prefWidth="190.0" style="-fx-background-color: #0048ff; -fx-border-color: #000000;" text="Create Acccount">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="430.0" layoutY="575.0" mnemonicParsing="false" onAction="#btnDeleteAccount" prefHeight="39.0" prefWidth="194.0" style="-fx-background-color: #e13a3a; -fx-border-color: #000000;" text="Delete Account">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtName" layoutX="409.0" layoutY="293.0" prefHeight="30.0" prefWidth="229.0" promptText="username" />
+      <TextField fx:id="txtPassword" layoutX="408.0" layoutY="350.0" prefHeight="30.0" prefWidth="230.0" promptText="password" />
+      <TextField fx:id="txtStatus" layoutX="408.0" layoutY="406.0" prefHeight="30.0" prefWidth="230.0" promptText="addmin/user" />
+      <ImageView fitHeight="67.0" fitWidth="91.0" layoutX="487.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/add-group.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

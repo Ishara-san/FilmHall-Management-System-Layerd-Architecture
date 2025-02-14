@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminWindow" prefHeight="750.0" prefWidth="1350.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.project.filmhall.controller.admin_page.AdminpageFormController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="360.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/admindash.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="90.0" layoutY="662.0" mnemonicParsing="false" onAction="#btnLogoutFromAdmin" prefHeight="40.0" prefWidth="122.0" style="-fx-background-color: #000000;" text="logout" textFill="#ff0000d6">
+         <font>
+            <Font name="System Bold" size="16.7" />
+         </font>
+      </Button>
+      <Button layoutX="30.0" layoutY="254.0" mnemonicParsing="false" onAction="#btnMovieOnAction" prefHeight="47.0" prefWidth="234.0" style="-fx-border-color: #000000; -fx-border-width: 1;" text="Movie" textAlignment="CENTER" textFill="#000000ad">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="30.0" layoutY="328.0" mnemonicParsing="false" onAction="#btnEmployeeOnAction" prefHeight="47.0" prefWidth="234.0" style="-fx-border-color: #000000; -fx-border-width: 1;" text="Employee" textFill="#000000ad">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="32.0" layoutY="403.0" mnemonicParsing="false" onAction="#btnPaymentOnAction" prefHeight="47.0" prefWidth="234.0" style="-fx-border-color: #000000; -fx-border-width: 1;" text="Payment" textFill="#000000ad">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="33.0" layoutY="552.0" mnemonicParsing="false" onAction="#btnReportOnAction" prefHeight="47.0" prefWidth="232.0" style="-fx-border-color: #000000; -fx-border-width: 1;" text="Report" textFill="#000000ad">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="33.0" layoutY="478.0" mnemonicParsing="false" onAction="#btnAccountOnAction" prefHeight="47.0" prefWidth="232.0" style="-fx-border-color: #000000; -fx-border-width: 1;" text="Account" textFill="#000000ad">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="adminPane" layoutX="295.0" prefHeight="750.0" prefWidth="1052.0" style="-fx-background-color: #000000;">
+         <children>
+            <ImageView fitHeight="750.0" fitWidth="1055.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/userside.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="752.0" fitWidth="1191.0" layoutX="1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/649c02089bc7c6dc479285fc_CineSync-mobile-hero-image.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="193.0" fitWidth="215.0" layoutX="59.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/filming.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="118.0" layoutX="279.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="704.0" />
+            <ImageView fitHeight="91.0" fitWidth="85.0" layoutX="326.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/operational-cost.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="97.0" fitWidth="117.0" layoutX="567.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/support.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="97.0" fitWidth="86.0" layoutX="445.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/save.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="88.0" fitWidth="80.0" layoutX="709.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/lock.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="81.0" fitWidth="116.0" layoutX="841.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/video.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="56.0" layoutY="433.0" prefHeight="127.0" prefWidth="402.0" text="Welocome " textFill="#ffffffc9">
+               <font>
+                  <Font name="System Bold" size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="527.0" prefHeight="118.0" prefWidth="318.0" text="To The" textFill="#ffffffc9">
+               <font>
+                  <Font name="System Bold" size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="611.0" prefHeight="110.0" prefWidth="526.0" text="Admin  Panel ..." textFill="#ffffffc9">
+               <font>
+                  <Font name="System Bold" size="70.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="40.0" layoutY="178.0" prefHeight="44.0" prefWidth="215.0" text="A D M I N" textFill="#000000de">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="91.0" fitWidth="92.0" layoutX="105.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/user.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminloginpane" prefHeight="750.0" prefWidth="1052.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.project.filmhall.controller.user_page.admin.AdminLoginPageFormController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1055.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/userside.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#edf4fa00" height="579.0" layoutX="302.0" layoutY="76.0" stroke="BLACK" strokeType="INSIDE" width="431.0" />
+      <TextField fx:id="txtUsername" layoutX="375.0" layoutY="307.0" prefHeight="36.0" prefWidth="290.0" promptText="username">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPassword" layoutX="376.0" layoutY="387.0" prefHeight="36.0" prefWidth="290.0" promptText="password">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Button layoutX="441.0" layoutY="531.0" mnemonicParsing="false" onAction="#btnAdminLoginOnAction" prefHeight="40.0" prefWidth="161.0" style="-fx-border-color: #000000;" text="login">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="442.0" layoutY="213.0" prefHeight="58.0" prefWidth="158.0" text="Admin Login" textFill="#383838">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="376.0" layoutY="422.0" prefHeight="24.0" prefWidth="196.0" text="forget  password">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Hyperlink>
+      <Line endX="314.4000244140625" endY="478.4928283691406" layoutX="376.0" layoutY="7.0" startX="-28.79998779296875" startY="478.4928283691406" />
+      <ImageView fitHeight="79.0" fitWidth="80.0" layoutX="481.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/login.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
