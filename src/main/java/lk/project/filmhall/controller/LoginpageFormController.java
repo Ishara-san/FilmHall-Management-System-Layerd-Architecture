@@ -21,13 +21,13 @@ public class LoginpageFormController {
         window.close();
         Stage stage = new Stage();
         try {
-
+/*
             Parent load = FXMLLoader.load(getClass().getResource("/view/user_page/userpage_form.fxml"));
             Scene scene = new Scene(load);
             stage.setScene(scene);
-            stage.show();
+            stage.show();*/
 
-/*
+
             if (txtPassword.getText().trim().equals("1234")&& txtUsername.getText().trim().equals("user")) {
                 Parent load = FXMLLoader.load(getClass().getResource("/view/user_page/userpage_form.fxml"));
                 Scene scene = new Scene(load);
@@ -42,7 +42,7 @@ public class LoginpageFormController {
                 new Alert(Alert.AlertType.ERROR, "Invalid Username Or Password , Try again !").show();
 
             }
-*/
+
         } catch (IOException e) {
             new Alert(Alert.AlertType.ERROR, "Failed to load login form - Contact Developer. ").show();
             e.printStackTrace();
